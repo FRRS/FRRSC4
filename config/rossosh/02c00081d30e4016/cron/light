@@ -1,5 +1,4 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-# Ver 01.09.2019
 # ВКЛЮЧАЕМ СВЕТ
 48	16	1	1	*	root	/usr/local/bin/gpio write	27	0
 49	16	2	1	*	root	/usr/local/bin/gpio write	27	0
