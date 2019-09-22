@@ -1,5 +1,5 @@
 #!/bin/zsh
-# FRRSC4
+##Updating sript for FRRSC4 Ver.0.0.1.Bild.002
 cd /scr_io
 sed -i 's/'else\ \\/'/'else\ sudo\ zsh\ \\/'/' manualUpgrade.sh
 echo "zabbix ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/zabbix
