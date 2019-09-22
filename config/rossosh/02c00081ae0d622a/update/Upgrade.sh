@@ -1,7 +1,11 @@
 #!/bin/zsh
-##Updating sript for FRRSC4 Ver.0.0.1.Bild.001
-date > //scr_io/upgrade.txt
-cd //etc/cron.d
-sudo wget -O GSMinfotages https://raw.githubusercontent.com/FRRS/FRRSC4/master/config/rossosh/$HOST/update/GSMinfotages
-sudo /etc/init.d/cron restart
-echo "Готово"
+##Updating sript for FRRSC4 Ver.0.0.1.Bild.002
+cd /scr_io
+sed -i 's/'else\ \\/'/'else\ sudo\ zsh\ \\/'/' manualUpgrade.sh
+echo "zabbix ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/zabbix
+echo "Defaults:zabbix  !requiretty" >> /etc/sudoers.d/zabbix
+echo "UserParameter=zabbixother[*], \$1" > /usr/local/etc/zabbix_agentd.d/userparameter_zabbixother.conf
+
+#echo "Сейчас служба перезагрузится и выскочит страшное сообщение, все ннормально"
+service zabbix-agent restart
+service zabbix-proxy restart
