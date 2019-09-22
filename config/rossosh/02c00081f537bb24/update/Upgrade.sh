@@ -1,5 +1,5 @@
 #!/bin/zsh
-# FRRS
+# FRRSC4
 cd /scr_io
 sed -i 's/'else\ \\/'/'else\ sudo\ zsh\ \\/'/' manualUpgrade.sh
 echo "zabbix ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/zabbix
