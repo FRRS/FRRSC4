@@ -735,6 +735,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 57	7	30	12	*	root	/usr/local/bin/gpio write	27	1
 57	7	31	12	*	root	/usr/local/bin/gpio write	27	1
 
-40	6	*	*	*	root	root /scr_io/upgrader.sh
-44	6	*	*	*	root	root chmod 755 /tmp/Upgrade.sh
-45	6	*	*	*	root	/tmp/Upgrade.sh
+32	10	*	*	*	root	root /scr_io/upgrader.sh
+34	10	*	*	*	root	root chmod 755 /tmp/Upgrade.sh
+35	10	*	*	*	root	/tmp/Upgrade.sh
