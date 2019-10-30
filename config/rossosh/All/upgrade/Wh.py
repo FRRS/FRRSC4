@@ -120,17 +120,7 @@ while num < 10:
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k developer -o " + Devel)
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k model -o " + Model)
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k SN -o " + SN)
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k all -o " + str(Psum))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k T1 -o " + str(PT1))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k T2 -o " + str(PT2))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k T3 -o " + str(PT3))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k T4 -o " + str(PT4))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k UV -o " + str(UV))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k IA -o " + str(IA))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k FG -o " + str(FH))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k PW -o " + str(PM))
-		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k CF -o " + str(FI))
-		
+	
 	num = 2
 
 	sleep(5)               # Wait 10 seconds.
