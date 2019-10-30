@@ -103,11 +103,11 @@ while num < 10:
 		# SEND TO ZABBIX
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k FG -o " + str(FH))
 		oldFH = FH		
-	if abs(PM - oldPM) > 10 :
+	if abs(PM - oldPM) > 39 :
 		# SEND TO ZABBIX
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k PW -o " + str(PM))
 		oldPM = PM
-	if abs(FI - oldFI) > 1 :
+	if abs(FI - oldFI) > 0.1 :
 		# SEND TO ZABBIX
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k CF -o " + str(FI))
 		oldFI = FI	
