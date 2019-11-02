@@ -121,6 +121,7 @@ while num < 10:
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k model -o " + Model)
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k SN -o " + SN)
 		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k IA -o " + str(IA))
+		subprocess.getoutput("zabbix_sender -vv -z 127.0.0.1 -s " + HOSTNAME + " -k PW -o " + str(PM))
 	
 	num = 2
 
