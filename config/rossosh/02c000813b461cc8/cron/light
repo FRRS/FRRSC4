@@ -125,7 +125,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 50	19	2	5	*	root	/usr/local/bin/gpio write	27	0
 50	19	3	5	*	root	/usr/local/bin/gpio write	27	0
 50	19	4	5	*	root	/usr/local/bin/gpio write	27	0
-50	19	5	5	*	root	/usr/local/bin/gpio write	27	0
+50  19	5	5	*	root	/usr/local/bin/gpio write	27	0
 57  19	6	5	*	root	/usr/local/bin/gpio write	27	0
 57	19	7	5	*	root	/usr/local/bin/gpio write	27	0
 57	19	8	5	*	root	/usr/local/bin/gpio write	27	0
